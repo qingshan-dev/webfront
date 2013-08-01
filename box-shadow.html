@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>box-shadow</title>
+  <style>
+    li{
+      list-style: none;
+      width: 200px;
+      height: 100px;
+      margin: 30px;
+      display: inline-block;
+    }
+
+    .shadow {
+      -moz-box-shadow:2px 2px 10px #06C;
+      -webkit-box-shadow:2px 2px 10px #06C;
+      box-shadow:2px 2px 10px #06C;
+    }
+    
+    .shadow1 {
+      box-shadow:inset 2px 2px 10px #06C; 
+    }
+    
+    .shadow2 {
+      box-shadow:0 0 10px 20px #06C;
+    }
+
+    .shadow3 {
+      box-shadow:inset 0px 0px 10px #06C; 
+    }
+    
+    .shadow4 {
+      box-shadow:-10px 0 10px red, 
+      box-shadow:10px 0 10px blue,
+      box-shadow:0 -10px 10px yellow,
+      box-shadow:0 10px 10px green;
+    }
+    .shadow5 {
+     box-shadow:inset 1px 1px 10px #06C;
+    }
+    .shadow6 {
+      
+    }
+    .shadow7 {
+      
+    }
+    .shadow8 {
+      
+    }
+    .shadow9 {
+      
+    }
+    .shadow10 {
+      
+    }
+  </style>
+</head>
+<body>
+<p>
+<dt>img{box-shadow:阴影类型 X轴位移 Y轴位移 阴影大小 阴影扩展 阴影颜色 }</dt>
+<dl>当不设阴影类型时，默认为投影效果。当设为inset时，为内阴影效果。</dl>
+<dl>X轴和Y轴位移不等同但类似于Photoshop里面的”角度”和”位置。</dl>
+<dl>阴影大小、扩展、颜色和Photoshop里面的都同理</dl>
+
+<ul>
+  <li class="shadow">2px 2px 10px #06C</li>
+  <li class="shadow1">inset 2px 2px 10px #06C</li>
+  <li class="shadow2">0 0 10px 20px #06C</li>
+  <li class="shadow3">inset 0px 0px 10px #06C</li>
+  <li class="shadow4">box-shadow:-10px 0 10px red, box-shadow:10px 0 10px blue,box-shadow:0 -10px 10px yellow,box-shadow:0 10px 10px green</li>
+  <li class="shadow5">2px 2px 10px #06C</li>
+  <li class="shadow6">2px 2px 10px #06C</li>
+  <li class="shadow7">2px 2px 10px #06C</li>
+  <li class="shadow8">2px 2px 10px #06C</li>
+  <li class="shadow9">2px 2px 10px #06C</li>
+  <li class="shadow10">2px 2px 10px #06C</li>
+</ul>
+</body>
+</html>

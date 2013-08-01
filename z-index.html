@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>z-index</title>
+  <style>
+  .container {
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+    position: relative;
+    z-index: 0;
+  }
+    .wrap {
+      width: 66px;
+      height: 66px;
+      background: url(img/quser_avatar_bg.png) no-repeat;
+      position: relative;
+    }
+    .avatar{
+        width: 60px;
+        height: 60px;
+        margin-left: 3px;
+        margin-top: 3px;
+        position: relative;
+        z-index: -1;
+      }
+  </style>
+</head>
+<body>
+<div class="container">  
+  <div class="wrap">
+    <img src="img/demo.jpg" class="avatar">
+  </div>
+</div>
+
+<p href="http://www.neoease.com/tutorials/z-index/">参考地址</p> 
+</body>
+</html>
