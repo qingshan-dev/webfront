@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <title>点击地图获取当前经纬度</title>
+  <style type="text/css">
+  #allmap {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    margin:20px auto;
+  }
+  .search-text {
+    width: 200px;
+    height: 25px;
+  }
+  .search-btn {
+    height: 30px;
+    cursor: pointer;
+  }
+  </style>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=33c4d665fc455e241a745513797e21b0"></script>
+
+  <script src="lib/jquery.js"></script>
+  <script src="baidumap.js"></script>
+</head>
+<body>
+  <form class="search">
+    <input type="text" class="search-text" autocomplete="on"/>
+    <input type="submit" class="search-btn" />
+    <input type="text" class="position" disabled/>
+  </form>
+  <div id="allmap"></div>
+</body>
+</html>

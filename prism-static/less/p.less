@@ -1,0 +1,64 @@
+.p(@color) {
+    @p_width: 265px;
+    @p_height: 66px;
+    position: absolute;
+    width: @p_width;
+    height: @p_height;
+    border-radius: 8px;
+    border: 2px solid @color;
+    background: #000;
+    opacity: 0.95;
+    z-index: 50000;
+
+    p, h3, h4, h5, small{
+        white-space: nowrap;
+        font-family: 微软雅黑;
+    }
+
+    .p_pic {
+        position: relative;
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-top: 6px;
+        margin-left: 4px;
+        border-radius: 2px;
+        border-radius: 2px;
+        border: 2px solid @color;
+    }
+    .p_content {
+        position: relative;
+        float: right;
+        width: @p_width - 65;
+        height: 52px;
+        margin-top: 7px;
+        margin-right: 2px;
+        color: #FFF;
+        font-size: 14px;
+        line-height: 16px;
+        overflow: hidden;
+        small {
+            color: @color;
+        }
+    }
+}
+
+.p1{
+    .p(#e5004f);
+}
+.p2{
+    .p(#f39800);
+}
+.p3{
+    .p(#8957a1);
+}
+.p4{
+    .p(#02cf03);
+}
+.p5{
+    .p(#ffff00);
+}
+.p6{
+    .p(#00b7ee);
+}
+

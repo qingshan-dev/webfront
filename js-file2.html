@@ -1,0 +1,32 @@
+<html>
+<body>
+
+  <button onclick="saveTextAsFile()">Save Text to File</button>
+
+
+<script type='text/javascript'>
+
+function saveTextAsFile() {
+  var textToWrite = "{'a':'nihao'}";
+  var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
+  var fileNameToSaveAs = "zimeiti-base.json";
+
+  var downloadLink = document.createElement("a");
+  downloadLink.download = fileNameToSaveAs;
+  downloadLink.innerHTML = "Download File";
+  if (window.webkitURL != null)
+  {
+    // Chrome allows the link to be clicked
+    // without actually adding it to the DOM.
+    downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+  }
+
+  downloadLink.click();
+}
+
+// saveTextAsFile();
+
+</script>
+
+</body>
+</html>

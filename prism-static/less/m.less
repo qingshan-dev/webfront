@@ -1,0 +1,116 @@
+.m(@color) {
+    @u_width: 255px;
+    @slide_margin: 25px;
+    position: absolute;
+    width: @u_width;
+    border-radius: 8px;
+    border: 2px solid @color;
+    text-align: center;
+    background: #000;
+    opacity: 0.95;
+    z-index: 50000;
+
+    p, h3, h4, h5, small {
+        white-space: nowrap;
+        color: @color;
+    }
+
+    .m_line {
+        position: absolute;
+        top: 24px;
+        left: -12px;
+        width: 70px;
+        height: 0px;
+        border: 1px solid @color;
+        -webkit-transform:rotate(135deg);
+    }
+
+    .m_type_logo {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 180%;
+        color: @color;
+    }
+    
+    .m_name {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    .m_slide {
+        margin: 0 @slide_margin;
+        margin-top: 8px;
+        margin-bottom: 13px;
+        .m_carousel-inner{
+            .m_item {
+                .m_time {
+                    position: relative;
+                    float: left;
+                    width: 100%;
+                    text-align: left;
+                    small {
+                        color: #A6937C;
+                    }
+                }
+                .m_content{
+                    position: relative;
+                    float: left;
+                    margin-top: 5px;
+                    text-align: left;
+                    color: @color;
+                    color: #FFF;
+                    line-height: 16px;
+                }
+                .m_post_count {
+                    position: relative;
+                    float: right;
+                    width: 100%;
+                    text-align: right;
+                    margin-top: 4px;
+                    small {
+                        font-size: 12px;
+                        color: #A6937C;
+                    }
+                }
+            }
+        }
+        .m_left {
+            top: -7px;
+            left: 167px;
+        }
+        .m_right {
+            top: -7px;
+            left: 192px;
+        }
+        .m_control {
+            color: @color;
+            position: absolute;
+            font-size: 190%;
+            font-weight: 900;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.m1{
+    .m(#e5004f);
+}
+.m2{
+    .m(#f39800);
+}
+.m3{
+    .m(#8957a1);
+}
+.m4{
+    .m(#02cf03);
+}
+.m5{
+    .m(#ffff00);
+}
+.m6{
+    .m(#00b7ee);
+}

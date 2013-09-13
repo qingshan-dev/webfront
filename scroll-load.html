@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 100%;
+      height: 100px;
+      border:1px solid red;
+    }
+  </style>
+
+  <script src="lib/jquery.js"></script>  
+  <script type="text/javascript">  
+  $(document).ready(function() {
+    var range = 50;             //距下边界长度/单位px  
+    var num = 1;  
+    var totalheight = 0;   
+
+    $(window).scroll(function() {
+      var srollPos = $(window).scrollTop();
+      totalheight = parseFloat($(window).height()) + parseFloat(srollPos);  
+      if(($(document).height()-range) <= totalheight  && num < 50) {
+        loading();
+        num++;
+      }
+    });  
+
+    function loading() {
+      $("#content").append("<div class='box'>hello world---" + num + "</div>");
+    }
+
+  });
+  </script>  
+</head>  
+<body>  
+  <div id="content" style="height:960px">  
+    <div id="follow">this is a scroll test;<br/>页面下拉自动加载内容</div>  
+    <div style='border:1px solid tomato;margin-top:20px;color:#ac1;height:800' >hello world test DIV</div>
+  </div>  
+</body>  
+</html>

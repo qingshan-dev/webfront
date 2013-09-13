@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>str2json</title>
+</head>
+<body>
+  <script>
+    function ConvertToJsonForJs() {  
+          //var testJson = "{ name: '小强', age: 16 }";(支持)  
+          //var testJson = "{ 'name': '小强', 'age': 16 }";（支持）  
+          var testJson = '{ "name": "小强", "age": 16 }';  
+          //testJson=eval(testJson);//错误的转换方式  
+          testJson = eval("(" + testJson + ")");  
+          alert(testJson.name);  
+      }
+
+    ConvertToJsonForJs();  
+  </script>
+</body>
+</html>

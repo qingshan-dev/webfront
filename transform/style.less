@@ -1,0 +1,27 @@
+body {
+  
+}
+
+div {
+    height: 150px;
+    width: 150px;
+}
+.container {
+  -webkit-perspective: 600px;
+    border: 1px solid black;
+    position: absolute;
+    top:50%;
+    left :50%;
+    margin-top: -75px;
+    margin-left: -75px;
+}
+.transformed {
+  background: blue;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+}
+.child {
+    -webkit-transform-origin: top left;
+    -webkit-transform: rotateX(0deg);
+    background-color: lime;
+}
