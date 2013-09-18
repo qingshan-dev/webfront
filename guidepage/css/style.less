@@ -1,0 +1,174 @@
+/**
+ * style for guide page of qfo
+ * Created by callblueday
+ * @time 2013-09-16
+ */
+
+/* global setting */
+* { padding: 0;margin: 0; }
+li { display: none; }
+a { text-decoration: none; }
+.b { border:1px solid red; }
+body { font-family: 'Adobe 黑体 Std' sans-serif;}
+
+/* custome setting */
+@width:824px;
+
+header {
+  width: @width;
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+
+  .logo {
+    width: 76px;
+    height: 31px;
+    position: absolute;
+    left: 34px;
+    top: 50%;
+    margin-top: -15px;
+  }
+  
+  nav {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    a {
+      color: #999;
+      font-size: 14px;
+    }
+    a:hover {
+      color: #bebebe;
+    }
+    a:first-child {
+      margin-right: 24px;
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 98px;
+  line-height: 98px;
+  color: #fff;
+  background: url("../img/bg.png") repeat-x;
+  text-align: center;
+  font-size: 18px;
+
+  .small {
+    font-size: 14px;
+  }
+  .big {
+    font-size: 30px;
+  }
+}
+
+#main {
+  width: @width;
+  min-height: 100px;
+  margin: 0 auto;
+  padding-bottom: 44px;
+
+  .progress {
+    width: @width;
+    min-height: 220px;
+    margin: 50px auto 44px auto;
+    padding-bottom: 41px;
+    background: url("../img/shadow.png") no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+  
+    li {
+      display: block;
+      float: left;
+      width: 262px;
+      height: 220px;
+    }
+
+    li:nth-of-type(2) {
+      margin: 0 19px;
+    }
+
+    .pic {
+      display: block;
+    }
+
+    .tip {
+      height: 60px;
+      width: 262px;
+      margin: 10px auto;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      color: #333;
+      border: 1px solid #fff;
+
+      p {
+        display: inline-block;
+        padding: 12px 0 0 32px;
+
+        .ps {
+          display: block;
+          text-align: center;
+          font-size: 12px;
+          color:rgb(153, 153, 153);
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .step1 {
+      background: url(../img/a.png) no-repeat;
+      background-position: left top;
+      // width: 100px;
+
+    }
+    .step2 {
+      background: url(../img/b.png) no-repeat;
+      // width: 210px;
+    }
+    .step3 {
+      background: url(../img/c.png) no-repeat;
+      // width: 150px;
+    }
+  }
+
+  .warm {
+    clear: both;
+    width: @width - 118px;
+    height: 168px;
+    margin: 0 auto;
+    position: relative;
+
+    .warmpic {
+      position: absolute;
+      left: 0;
+    }
+    .warmtip {
+      position: absolute;
+      right: 0;
+      bottom: 10px;
+      font-size: 18px;
+      color: rgb(102, 102, 102);
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background: url(../img/foot.png) repeat-x #f8f8f8;
+  padding-bottom: 10px;
+
+  .info {
+    width: @width;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 24px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 19px;
+    color: #c5c5c5;
+  }
+}
+
