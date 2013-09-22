@@ -1,0 +1,51 @@
+<!DOCTYPE html><html class=" -webkit-"><head><meta charset="UTF-8"><style media="screen" data-href="/stylesheets/css/reset.css">html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+</style><style>
+body {
+  background: #000;
+  color: #fff;
+  font: 100%/20px helvetica, arial, sans-serif;
+}
+
+canvas {
+  display: block;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+#control-panel {
+  background: rgba(0,0,0,.75);
+  border: 1px solid #333;
+  left: 20px;
+  padding: 10px 15px;
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+}
+
+p {
+	font-size: 12px;
+  margin: 0 0 5px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+}	
+
+button {
+  display: block; 
+  margin: 10px 0 0;
+}</style></head><body><div id="control-panel">
+<p>点击或者拖拽鼠标试试</p>
+<label>Trails: </label>
+<input type="checkbox" id="trail" name="trail" checked="">
+<button id="clear">Clear</button>
+</div>
+<canvas id="c" width="1280" height="236"></canvas>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="img/js/rum.js"></script></body></html>

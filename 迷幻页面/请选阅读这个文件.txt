@@ -1,0 +1,228 @@
+页标标题          url地址名称      页面效果资源（请从这里下载源码进行整合）   制作要求
+------------------------------------------------------------------------------------------------------
+粒子迷幻时钟       lzmhsz           http://codepen.io/msurguy/pen/tDCvp     让时钟居中显示，黑底
+
+行走的黑猫         xzdhm            http://codepen.io/CrowChick/pen/bpAJH    不让猫咪消失,文字稍后替换
+
+投掷骰子           tzsz             http://codepen.io/outofroutine/pen/CADvB 按钮变中文字
+
+跃动斑点           ydbd             http://codepen.io/soulwire/pen/kqHxB   全面布满一排排斑点,删掉所有字
+
+渐变色光球         jbsgq            http://codepen.io/peterwestendorp/pen/wGECk  把球调大点600-700PX左右
+
+马赛克墙           mskq             http://codepen.io/flash-monkey/pen/Efskr  默认效果
+
+雷达扫描频谱       ldsmpp           http://codepen.io/jackrugile/pen/DGenc 把左侧功能汉化即可
+
+旋转点             xzd              http://codepen.io/davidchase/pen/qkKpx  看看能否把球变多,一层一层的
+
+音频效果           ypxg             http://codepen.io/sumitsarkar/pen/IfLnz  放大移至底部
+
+马赛克肖像         mskxx            http://codepen.io/briangonzalez/pen/AvrGI 图片替换为雷鬼音乐人(需要用到ruby)
+
+甲壳虫乐队         jkcyd            http://codepen.io/webbushka/pen/mFsnq   默认效果
+
+大果冻             gdxg             http://codepen.io/adrianleb/pen/roBaf   让效果占半屏幕，颜色调鲜艳。
+
+奇怪的二维码     qgdewm             http://codepen.io/jorisvddonk/pen/xIwJB 按钮汉化，二维码居中，按钮居中
+
+凌乱线条         llxt               http://codepen.io/soulwire/pen/mfkHo  汉化功能按钮即可。
+
+立体方块         ltfk               http://codepen.io/grayghostvisuals/pen/GIigc 把顶部白字删除，其他默认
+
+立体星仪         ltxy               http://codepen.io/danielemoraschi/pen/psKHv 放大到600-700PX
+
+和平文字         hpwz               http://codepen.io/tholman/pen/qCnfB 把提示汉化,内容填入“Peace!”+10个
+
+2B香蕉           2bxj               http://codepen.io/Simonclavey/pen/njwvy 放大1倍，居中即可
+
+动态点           dtd                http://codepen.io/sinthetyc/pen/uszav  稍微放大，居中显示
+
+立体星仪2        ltxy2              http://codepen.io/kidnickels/pen/zHpah 默认，稍微加速一点
+
+红色光环         hsgh               http://codepen.io/aardrian/pen/frlgC 汉化功能按钮,效果放大2倍即可
+
+记事本           jsb                http://codepen.io/stijnvc/pen/kxbgH 默认居中，美观调整即可。
+
+梦幻光环         mhgh               http://codepen.io/micjamking/pen/HqgGe 效果放大一倍即可
+
+双色线条         ssxt               http://codepen.io/tholman/pen/Jochj 默认
+
+层层齿轮         cccl               http://codepen.io/vmilo/pen/mzEhA 默认居中
+
+小桃心           xtx                http://codepen.io/dievardump/pen/pwuKo  尽量大点居中。
+
+密集恐惧点       mjkjd              http://codepen.io/loktar00/pen/voIuq 默认
+ 
+方形幻觉         fxhj               http://codepen.io/HugoGiraudel/pen/GkCuq 默认 
+
+2B小人           2bxr               http://codepen.io/mastastealth/pen/ovFhq 默认居中
+
+药丸里的猫       ywldm              http://codepen.io/shaunkardinal/pen/JkpoC 默认
+
+原型节点         yxjd               http://codepen.io/tholman/pen/AmptL 放大1倍居中
+
+迷幻循环线条     mhxhxt             http://codepen.io/adkatrit/pen/AfFye 默认即可
+
+满屏幕的虫       mpmdc              http://codepen.io/soulwire/pen/zhLeK 默认
+
+星空             xk                 http://codepen.io/WillemCrnlssn/pen/JgFGs 默认
+
+云层飞行         ycfx               http://codepen.io/sinthetyc/pen/nLxrJ 默认
+
+太空星轨         tkxg               http://codepen.io/juliangarnier/pen/idhuG 汉化功能
+
+000000          000000              http://codepen.io/mareis/pen/oHAGL 默认
+
+单点循环        ddxh                http://codepen.io/jackrugile/pen/sadvF 默认
+
+追随耀光        zsyg                http://codepen.io/hakimel/pen/KanIi  默认
+
+海面            hm                  http://codepen.io/loktar00/pen/kfrKC  默认
+
+花藤            ht                  http://codepen.io/tholman/pen/EpfLs 默认
+
+迷幻扑克        mhpk                http://codepen.io/loktar00/pen/Fuxrc 默认
+
+草原            cy                  http://codepen.io/jackrugile/pen/vKtAE 删除左侧白字，其他默认
+
+peace霓虹灯     peacenhd            http://codepen.io/neilcarpenter/pen/zFlay 把文字替换成peace
+
+经典管道        jdgd                http://codepen.io/sinthetyc/pen/wGAkb 默认居中
+
+俄罗斯方块     elsfk                http://codepen.io/JorenVanHee/pen/ycodJ  居中，放大4倍效果
+
+超级玛丽       cjml                 http://codepen.io/GianlucaGuarini/pen/anwFE 颜色切换速度加快2倍
+
+线条圆         xty                  http://codepen.io/hakimel/pen/HBkxg  放大1倍居中
+
+圆柱圆点       yzyd                 http://codepen.io/tholman/pen/rdatv  居中默认
+
+迷幻蒙娜丽莎    mhmnls              http://codepen.io/tholman/pen/qLsCb 图放大1倍，汉化按钮放图下面，居中
+
+迷幻旋转方块   mhxzfk               http://codepen.io/micjamking/pen/obdGw 放大1倍
+
+迷幻光电       mhgd                 http://codepen.io/jackrugile/pen/Drykf 默认
+
+下雨天         xyt                  http://codepen.io/alemesre/pen/hAxGg 默认,看换背景大图卡不卡？
+
+声纳线         snx                  http://codepen.io/hakimel/pen/zwxba 默认样式，汉化功能按钮
+
+环绕点         hrd                  http://codepen.io/hakimel/pen/mBIro  默认 汉化功能
+
+声音波普      sybp                  http://codepen.io/Flawless13/pen/ecaAv 底部居中，放大1倍
+
+迷幻色谱      mhsp                  http://codepen.io/HugoGiraudel/pen/nGsqr 放大2倍居中，灰背景(灰度和原周围一样颜色)
+
+幻氛围        hfw                   http://codepen.io/sinthetyc/pen/jgcwC 默认居中
+
+渐变波纹      jbbw                  http://codepen.io/onedayitwillmake/pen/Evyfp 默认居中
+
+北极光幻      bjgh                  http://codepen.io/jackrugile/pen/jqwHE  默认底部
+
+渐变灰纹      jbhw                  http://codepen.io/turusuke/pen/trgsx 默认
+
+卫星图        wxt                   http://codepen.io/karimcossutti/pen/nmsib 默认居中
+
+变异线条      byxt                  http://codepen.io/tholman/pen/foxtn  默认样式，汉化按钮，去掉说明
+
+渐进竖条      jjst                  http://codepen.io/YanRoedel/pen/kdawG 默认放大1倍
+
+迷幻peace!    mhpeace               http://codepen.io/matthewlein/pen/extJh 字替换为“peace”，居中显示
+
+烟火效果     yhxg                   http://codepen.io/jackrugile/pen/AJoiC  默认
+
+满天碎片    mtsp                    http://codepen.io/whootboy/pen/qgeaC 尽量全屏，如太卡就稍微放大居中黑背景。
+
+燃放烟花    rfyh                    http://codepen.io/jackrugile/pen/acAgx 放大一些，把功能按钮简单汉化。
+
+十字方格    szfg                    http://codepen.io/Mobilpadde/pen/JnqFz 默认，移动速度加快一些。
+
+跟随光斑     gsgb                   http://codepen.io/jackrugile/pen/fhapD 默认，放大2倍，背景统一纯黑。
+
+柔美极光     rmjg                   http://codepen.io/amyth91/pen/BIbCo  默认底部。
+
+瀑布         pb                     http://codepen.io/jackrugile/pen/Knawg 放大4倍 居中 
+
+美味peace!  mwp                     http://codepen.io/chinchang/pen/neKJD 写“peace” ，放大3倍
+
+圆点水滴   ydsd                     http://codepen.io/tholman/pen/LCaHB 放大4倍，尽量占满屏。
+
+成长的树   czds                     http://codepen.io/FWeinb/pen/tDdzk 居中稍微放大，功能翻译一下。
+
+爆破光斑   bpgb                     http://codepen.io/soulwire/pen/foktm 循环效果，删除不用的文字。
+
+迷幻组合   mhzh                     http://codepen.io/jonathansampson/pen/Lzths 全屏显示，删除文字。
+
+百变便签   bbbq                     http://codepen.io/hakimel/pen/iyuDa 默认
+
+满屏气泡   mpqp                     http://codepen.io/jonathansampson/pen/szFGh 默认全屏
+
+迷幻花屏   mhhp                     http://codepen.io/jackrugile/pen/AJfaB 只需要电脑屏幕内的效果放大到全屏效果
+
+变化组合方块  bhzhfk                http://codepen.io/ericmatthys/pen/iDBqa 默认效果，翻译按钮
+
+扭曲方块    nqfk                    http://codepen.io/jonasroessum/pen/AfvHe 默认居中 
+
+双点围绕    sdwr                    http://codepen.io/janrubio/pen/DusIE  默认居中 
+
+自由节点    zyjd                    http://codepen.io/cstumph/pen/bauwm 默认全屏 
+
+打碎的peace!1 dsdpeace1             http://codepen.io/tholman/pen/xqnGb 样式一样，把文字体和为“PEACE”
+
+打碎的peace!2 dsdpeace2             http://codepen.io/tholman/pen/lDLhk 样式一样，把文字体和为“PEACE”
+
+变形水滴    bxsd                    http://codepen.io/hakimel/pen/xkKrC 默认样式，翻译功能按钮
+
+白色丝带    bssd                    http://codepen.io/soulwire/pen/Ckzen 默认样式，删除文字
+
+月食变化    ysbh                    http://codepen.io/HugoGiraudel/pen/geDqf 默认居中
+
+满屏纸带    mpzd                    http://codepen.io/tholman/pen/Kibqe 默认
+
+迷幻图形组合  mhtxzh                http://codepen.io/TimPietrusky/pen/qFdwh全屏默认效果
+
+动物的脸     dwdl                   http://codepen.io/alantippins/pen/qyaju 默认居中
+
+2B人脸       2brl                   http://codepen.io/sid-credits/pen/qyzJb  默认居中，去掉文字
+
+空降彩带     kjcd                   http://codepen.io/tholman/pen/jvIEz  默认全屏
+
+迷幻天空     mhtk                   http://codepen.io/montanaflynn/pen/orxwK 默认居中 
+
+彩色碎片     cssp                   http://codepen.io/tholman/pen/tuyrq     
+
+流行字体     lxzt                   http://codepen.io/GeneLocklin/pen/IhKLw 把说明文字换成中文
+
+像素玛丽     xsml                   http://codepen.io/geckotang/pen/DlCdo 默认，居中
+
+灰线雷达波普  hxldbp                http://codepen.io/jackrugile/pen/ejsbf 放大4倍
+
+奇怪的花     qgdh                   http://codepen.io/tholman/pen/GmpFn 默认全屏
+
+死亡舞蹈     swwd                   http://codepen.io/fixcl/pen/swkgA 顶部居中即可
+
+垂直竖线     czsx                   http://codepen.io/Tenderfeel/pen/Hyczl 默认全屏
+
+迷幻放射线   mhfsx                  http://codepen.io/jackrugile/pen/ohFbx 全屏显示
+
+旋转圆方     xzyf                   http://codepen.io/secondfret/pen/BczKs 默认居中显示
+
+三角圆   sjy                        http://codepen.io/catalinred/pen/cLeyx 居中，放大6倍
+
+魔方切面  mfqm                      http://codepen.io/johan/pen/yGDoI 默认居中，放大1倍
+
+吃豆小人    cdxr                    http://codepen.io/johanberonius/pen/cCbmt 居中放大1倍
+
+圆形迷宫  yxmg                      http://codepen.io/tholman/pen/gmBIc 始终循环显示，不白屏
+
+线性建筑   xxjz                     http://codepen.io/tholman/pen/kKsga 默认全屏
+
+迷幻红桃心  mhhtx                   http://codepen.io/MrNibbles/pen/CfygK 默认全屏
+
+神奇迷幻组合 sqmhzh                 http://codepen.io/MrNibbles/pen/tkjDn 默认全屏
+
+黑色小怪物1  hsxgw1                 http://codepen.io/hakimel/pen/ybxGk 默认
+
+迷幻线点  mhxd                      http://lab.hakim.se/linjer/ 默认全屏 翻译简单功能按钮及描述
+

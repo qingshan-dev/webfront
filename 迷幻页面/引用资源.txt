@@ -1,0 +1,1 @@
+http://code.jquery.com/jquery-latest.js

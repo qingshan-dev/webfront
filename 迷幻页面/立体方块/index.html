@@ -1,0 +1,336 @@
+<!DOCTYPE html><html class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta charset="UTF-8"><style>
+body {
+  background: red;
+}
+
+.title {
+  position: relative;
+  top: 3em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.title span {
+  display: block;
+  font-size: 1.85em;
+  line-height: .75em;
+  text-outline: black;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateX(0) rotateY(0);
+    -moz-transform: rotateX(0) rotateY(0);
+    -ms-transform: rotateX(0) rotateY(0);
+    -o-transform: rotateX(0) rotateY(0);
+    transform: rotateX(0) rotateY(0);
+  }
+
+  to {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+    -moz-transform: rotateX(360deg) rotateY(360deg);
+    -ms-transform: rotateX(360deg) rotateY(360deg);
+    -o-transform: rotateX(360deg) rotateY(360deg);
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -webkit-transform: rotateX(0) rotateY(0);
+    -moz-transform: rotateX(0) rotateY(0);
+    -ms-transform: rotateX(0) rotateY(0);
+    -o-transform: rotateX(0) rotateY(0);
+    transform: rotateX(0) rotateY(0);
+  }
+
+  to {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+    -moz-transform: rotateX(360deg) rotateY(360deg);
+    -ms-transform: rotateX(360deg) rotateY(360deg);
+    -o-transform: rotateX(360deg) rotateY(360deg);
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@-ms-keyframes spin {
+  from {
+    -webkit-transform: rotateX(0) rotateY(0);
+    -moz-transform: rotateX(0) rotateY(0);
+    -ms-transform: rotateX(0) rotateY(0);
+    -o-transform: rotateX(0) rotateY(0);
+    transform: rotateX(0) rotateY(0);
+  }
+
+  to {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+    -moz-transform: rotateX(360deg) rotateY(360deg);
+    -ms-transform: rotateX(360deg) rotateY(360deg);
+    -o-transform: rotateX(360deg) rotateY(360deg);
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@-o-keyframes spin {
+  from {
+    -webkit-transform: rotateX(0) rotateY(0);
+    -moz-transform: rotateX(0) rotateY(0);
+    -ms-transform: rotateX(0) rotateY(0);
+    -o-transform: rotateX(0) rotateY(0);
+    transform: rotateX(0) rotateY(0);
+  }
+
+  to {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+    -moz-transform: rotateX(360deg) rotateY(360deg);
+    -ms-transform: rotateX(360deg) rotateY(360deg);
+    -o-transform: rotateX(360deg) rotateY(360deg);
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotateX(0) rotateY(0);
+    -moz-transform: rotateX(0) rotateY(0);
+    -ms-transform: rotateX(0) rotateY(0);
+    -o-transform: rotateX(0) rotateY(0);
+    transform: rotateX(0) rotateY(0);
+  }
+
+  to {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+    -moz-transform: rotateX(360deg) rotateY(360deg);
+    -ms-transform: rotateX(360deg) rotateY(360deg);
+    -o-transform: rotateX(360deg) rotateY(360deg);
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.spin {
+  -webkit-animation: spin 5s infinite linear;
+  -moz-animation: spin 5s infinite linear;
+  -ms-animation: spin 5s infinite linear;
+  -o-animation: spin 5s infinite linear;
+  animation: spin 5s infinite linear;
+}
+
+.reflections, .csstransforms3d .cube .front, .csstransforms3d .cube .back, .csstransforms3d .cube .left, .csstransforms3d .cube .right {
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.6)));
+}
+
+.csstransforms3d .cube-container {
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 10em;
+  width: 200px;
+  -moz-perspective: 600px;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
+  -moz-perspective-origin: 50% 50%;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+.csstransforms3d .cube {
+  height: 100%;
+  position: absolute;
+  -webkit-transition: 0.5s all ease-in-out;
+  -moz-transition: 0.5s all ease-in-out;
+  -o-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  /* panels global styles*/
+  -webkit-transform: rotateX(-20deg) rotateY(28deg);
+  -moz-transform: rotateX(-20deg) rotateY(28deg);
+  -ms-transform: rotateX(-20deg) rotateY(28deg);
+  -o-transform: rotateX(-20deg) rotateY(28deg);
+  transform: rotateX(-20deg) rotateY(28deg);
+  backface-visibility: visible;
+  width: 100%;
+}
+.csstransforms3d .cube:hover {
+  cursor: pointer;
+  -webkit-transform: rotateX(-50deg) rotateY(0deg);
+  -moz-transform: rotateX(-50deg) rotateY(0deg);
+  -ms-transform: rotateX(-50deg) rotateY(0deg);
+  -o-transform: rotateX(-50deg) rotateY(0deg);
+  transform: rotateX(-50deg) rotateY(0deg);
+}
+.csstransforms3d .cube figure {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  height: 200px;
+  position: absolute;
+  width: 200px;
+  font-size: 2em;
+  line-height: 6em;
+  text-align: center;
+}
+.csstransforms3d .cube .front {
+  background: rgba(230, 0, 0, 0.5);
+  -webkit-transform: translateZ(100px);
+  -moz-transform: translateZ(100px);
+  -ms-transform: translateZ(100px);
+  -o-transform: translateZ(100px);
+  transform: translateZ(100px);
+}
+.csstransforms3d .cube .back {
+  background: rgba(200, 0, 0, 0.6);
+  -webkit-transform: rotateY(180deg) rotateX(0deg) translateZ(100px);
+  -moz-transform: rotateY(180deg) rotateX(0deg) translateZ(100px);
+  -ms-transform: rotateY(180deg) rotateX(0deg) translateZ(100px);
+  -o-transform: rotateY(180deg) rotateX(0deg) translateZ(100px);
+  transform: rotateY(180deg) rotateX(0deg) translateZ(100px);
+}
+.csstransforms3d .cube .left {
+  background: rgba(200, 0, 0, 0.5);
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+  -moz-transform: rotateY(-90deg) translateZ(100px);
+  -ms-transform: rotateY(-90deg) translateZ(100px);
+  -o-transform: rotateY(-90deg) translateZ(100px);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.csstransforms3d .cube .right {
+  background: rgba(200, 0, 0, 0.4);
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+  -moz-transform: rotateY(90deg) translateZ(100px);
+  -ms-transform: rotateY(90deg) translateZ(100px);
+  -o-transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(100px);
+}
+.csstransforms3d .cube .top {
+  background: rgba(200, 0, 0, 0.3);
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  -moz-transform: rotateX(90deg) translateZ(100px);
+  -ms-transform: rotateX(90deg) translateZ(100px);
+  -o-transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(100px);
+}
+.csstransforms3d .cube .bottom {
+  background: rgba(50, 50, 50, 0.5);
+  -webkit-transform: rotateX(-90deg) rotateZ(-180deg) translateZ(100px);
+  -moz-transform: rotateX(-90deg) rotateZ(-180deg) translateZ(100px);
+  -ms-transform: rotateX(-90deg) rotateZ(-180deg) translateZ(100px);
+  -o-transform: rotateX(-90deg) rotateZ(-180deg) translateZ(100px);
+  transform: rotateX(-90deg) rotateZ(-180deg) translateZ(100px);
+  opacity: .55;
+}
+
+.cube-switch {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6), inset 0 100px 50px rgba(255, 255, 255, 0.1);
+  /* Prevents clics on the back */
+  cursor: default;
+  display: block;
+  height: 100px;
+  position: relative;
+  left: -260px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* Prevents clics on the back */
+  pointer-events: none;
+  width: 100px;
+  white-space: nowrap;
+  background: #333;
+}
+
+/* The switch */
+.cube-switch .switch {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 0.7em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -7px 0 rgba(0, 0, 0, 0.2), inset 0 50px 10px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.2);
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  background: #666;
+  transition: all 0.2s ease-out;
+  /* Allows click */
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* SWITCH Active State */
+.cube-switch.active {
+  background: #222;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), inset 0 50px 50px rgba(55, 55, 55, 0.1);
+}
+
+.cube-switch.active .switch {
+  background: #333;
+  box-shadow: inset 0 6px 0 rgba(255, 255, 255, 0.1), inset 0 7px 0 rgba(0, 0, 0, 0.2), inset 0 -50px 10px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(205, 205, 205, 0.1);
+}
+
+.cube-switch.active:after,
+.cube-switch.active:before {
+  background: #333;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 1px 2px 1px rgba(0, 0, 0, 0.5), inset 3px 6px 2px rgba(200, 200, 200, 0.1), inset -1px -2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.cube-switch.active .switch:after,
+.cube-switch.active .switch:before {
+  background: #222;
+  border: none;
+  margin-top: 0;
+  height: 1px;
+}
+
+.cube-switch .switch-state {
+  display: block;
+  position: absolute;
+  left: 40%;
+  color: #FFF;
+  font-size: .5em;
+  text-align: center;
+}
+
+/* SWITCH On State */
+.cube-switch .switch-state.on {
+  bottom: 15%;
+}
+
+/* SWITCH Off State */
+.cube-switch .switch-state.off {
+  top: 15%;
+}
+</style></head><body><h1 class="title">Rotating <span>Cube</span></h1>
+<section>
+    <div class="cube-container">
+        <div class="cube">
+            <figure class="front"></figure>
+            <figure class="back"></figure>
+            <figure class="right"></figure>
+            <figure class="left"></figure>
+            <figure class="top"></figure>
+            <figure class="bottom"></figure>
+        </div>
+    </div>
+
+    <div href="" class="cube-switch">
+        <span class="switch">
+            <span class="switch-state off">Off</span>
+            <span class="switch-state on">On</span>
+        </span>
+    </div>
+</section>-<style>@font-face {font-family:"font";src:url("https://")}@media (touch-enabled),(-webkit-touch-enabled),(-moz-touch-enabled),(-o-touch-enabled),(-ms-touch-enabled),(modernizr){#touch{top:9px;position:absolute}}@media (transform-3d),(-webkit-transform-3d),(-moz-transform-3d),(-o-transform-3d),(-ms-transform-3d),(modernizr){#csstransforms3d{left:9px;position:absolute;height:3px;}}#generatedcontent:after{content:":)";visibility:hidden}</style>
+<script type="text/javascript" src="img/js/rum.js"></script></body></html>
