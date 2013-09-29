@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>hualb</title>
+    <script src="lib/jquery.js"></script>
+    <style>
+    @import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+    body {
+        padding: 0;
+        background: #eee;
+        overflow: hidden;
+        font-family:'Oswald', sans-serif;
+        text-align: center;
+    }
+    .frame {
+        position: relative;
+        width: 230px;
+        height: 380px;
+        padding: 6px;
+        background: #fff;
+        margin: 80px auto;
+    }
+    .shadow-top {
+        position: absolute;
+        left: -50px;
+        width: 0;
+        height: 0;
+        border-bottom: 366px solid #bbb;
+        border-left: 50px solid transparent;
+    }
+    .shadow-bottom {
+        position: absolute;
+        left: -50px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-top: 20px solid #aaa;
+        border-left: 50px solid transparent;
+    }
+    .canvas {
+        padding: 30px;
+        width: 170px;
+        height: 320px;
+        background: #FC6E51;
+        box-shadow: inset -2px 2px 0 #777;
+    }
+    .ground {
+        position: absolute;
+        top: 450px;
+        width: 100%;
+        min-width: 250px;
+        height: 400px;
+        padding: 120px 0;
+        background: #ddd;
+        overflow: hidden;
+    }
+    .workhard, .and, .benice {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 62px;
+        line-height: 70px;
+    }
+    .and {
+        font-size: 40px;
+    }
+    .benice {
+        margin: 0 auto;
+        width: 150px;
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .line {
+        width: 90px;
+        height: 1px;
+        background: #111;
+        margin: 30px auto 0;
+    }
+    .sign {
+        font-size: 3px;
+    }
+    a, .ground p {
+        color: #222;
+        line-height: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="ground">
+      <a href="http://www.anthonyburrill.com/purchase/work-hard">Anthony Burrill&#39;s Graphic Design Work.</a>
+      <p>Truely Inspiring.</p>
+    </div>
+    <div class="frame">
+        <div class="shadow-top"></div>
+        <div class="shadow-bottom"></div>
+        <div class="canvas">
+            <div class="workhard">Work Hard</div>
+            <div class="and">&amp;</div>
+            <div class="benice">Be nice to People</div>
+            <div class="line"></div>
+            <div class="sign">Anthony Burrell</div>
+        </div>
+    </div>
+</body>
+
+</html>
