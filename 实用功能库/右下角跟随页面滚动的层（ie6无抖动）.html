@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<title>右下角跟随页面滚动的层（ie6无抖动）</title>
+<style type="text/css">
+body{background:url(about:blank) fixed}
+#ScrollPanel{width:150px;height:100px;background:#ccc}
+#ScrollPanel p{font-size:12px;line-height:18px;padding:10px}
+</style>
+</head>
+
+<body>
+<div id="ScrollPanel">右下角跟随页面滚动的层（ie6无抖动）</div>
+<div style="height:1000px"></div>
+
+<script type="text/javascript">
+var ScrollPanel = (function(){
+        var obj = document.getElementById("ScrollPanel");
+        var width = obj.offsetWidth;
+        var height = obj.offsetHeight;
+        var isIE6 = /MSIE 6\./.test(navigator.userAgent) && !window.opera;
+        var isQuirksMode = (typeof document.compatMode !== "undefined" && /CSS.Compat/.test(document.compatMode)) ? false : true;
+        function getDocumentPosition() {
+            var d = isQuirksMode ? document.body : document.documentElement;
+            var height = d.clientHeight;
+            var width  = d.clientWidth;
+            var left   = d.scrollLeft;
+            var top    = d.scrollTop;
+            return{
+                width  : width,
+                height : height,
+                left   : left,
+                top    : top
+            };
+        }
+        function setPosition(){
+            if(isIE6){
+                var documentPosition = getDocumentPosition();
+                var left = documentPosition.width - width;
+                var top = documentPosition.height - height;
+                obj.style.position = "absolute";
+                obj.style.setExpression("left", "eval((document.documentElement.scrollLeft || document.body.scrollLeft) + " + left + ") + 'px'");
+                obj.style.setExpression("top", "eval((document.documentElement.scrollTop || document.body.scrollTop) + " + top + ") + 'px'");
+            }else{
+                obj.style.position = "fixed";
+                obj.style.right = 0 + "px";
+                obj.style.bottom = 0 + "px";
+            }
+        }
+        function start(){
+            if(!obj){return;}
+            setPosition();
+            addEvent(window,"scroll",setPosition);
+            addEvent(window,"resize",setPosition);
+        }
+        function addEvent(obj, eventType, func){
+            if(obj.attachEvent){
+                obj.attachEvent("on" + eventType,func);
+            }else{
+                obj.addEventListener(eventType,func,false);
+            }
+        }
+        return{
+            start:start
+        }
+})();
+ScrollPanel.start();
+</script>
+</body>
+</html>
