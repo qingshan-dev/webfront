@@ -54,13 +54,13 @@
     }
     
     .tip {
-      width: 600px;
+      width: 900px;
       position: absolute;
       word-wrap: break-word;
       word-break:normal;
       top: 200px;
       left: 50%;
-      margin-left: -300px;
+      margin-left: -450px;
       display: inline-block;
     }
 
@@ -153,6 +153,11 @@ function generateData(level) {
                   if(level == 2) {
                     return "0px";
                   }
+                },
+                "height": function() {
+                  if(level == 2) {
+                    return "60px";
+                  } 
                 }
              })
              .transition()
@@ -196,7 +201,7 @@ function generateData(level) {
       }
     }
   });
-
+  
   function clearInput() {
     d3.select("#input").node().value = "";
   }
@@ -217,7 +222,7 @@ function generateData(level) {
         var msg = "Great! Level "+level;
         if(level == 2) { msg = "Good job! Level "+level; }
         if(level == 3) { msg = "Be careful now! Level "+level; }
-        if(level == 4) { msg = "You will find a surprise after you pass "+level; }
+        if(level == 4) { msg = "The last level ! <br/> You will find a surprise！" }
         great(msg);
         setTimeout(function() {
           generateData(level);
@@ -231,7 +236,7 @@ function generateData(level) {
     msg = msg ? msg : ("Great! Level "+level);
     var greatOb = wrap.append("span")
                     .attr("class", "tip")
-                    .text(msg)
+                    .html(msg)
                     .transition()
                     .duration(1000)
                     .style({

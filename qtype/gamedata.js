@@ -17,6 +17,33 @@ var letters = ["t","h","e",
                "l","a","z","y",
                "d","g"];
 
+var phrases = [
+  {
+    "en":"The quick brown fox jumps over a lazy dog",
+    "zh":"快速的棕色狐狸跳过一条懒狗"
+  },
+  {
+    "en":"Pack my box with five dozen liquor jugs",
+    "zh":"将五打酒瓶装在我的箱子里"
+  },
+  {
+    "en":"The five boxing wizards jump quickly",
+    "zh":"五个打拳的男巫快速跳动"
+  },
+  {
+    "en":"Quick wafting zephyrs vex bold Jim",
+    "zh":"疾风使勇敢的吉姆不知所措"
+  },
+  {
+    "en":"Waltz nymph，for quick jigs vex Bud",
+    "zh":"女神轻快的华尔滋舞步激怒了巴德"
+  },
+  {
+    "en":"J．Q．Schwartz flung D．V．Pile my box",
+    "zh":"J．Q．Schwartz向D．V． Pike挥动我的箱子"
+  }
+];
+
 var people = [
   {"name": "ty", "avatar": "images/ty.jpg"},
   {"name": "zgxb", "avatar": "images/zgxb.jpg"},
@@ -31,25 +58,23 @@ var people = [
 
 var netpath = [
 { "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
-{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
+{ "mac":"98-4B-4A-29-0F-5E", "ip":"192.168.1.100", "name": "hjh", "dev":"moto" },
+{ "mac":"0C-74-C2-70-08-A3", "ip":"192.168.1.101", "name": "wtj", "dev":"iphone" },
+{ "mac":"1C-E6-2B-9C-D2-54", "ip":"192.168.1.102", "name": "qd", "dev":"pad-mini" },
+{ "mac":"00-26-C6-4B-BF-86", "ip":"192.168.1.103", "name": "wtj", "dev":"t4h" },
 
-// 98-4B-4A-29-0F-5E    192.168.1.100        hjh    moto
-// 0C-74-C2-70-08-A3    192.168.1.101        wtj    iphone
-// 1C-E6-2B-9C-D2-54    192.168.1.102        qd    pad-mini
-// 00-26-C6-4B-BF-86    192.168.1.103        wtj    t4h
+{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
+{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
+{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
+{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
+{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
+{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
+{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
+{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
+{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" },
+{ "mac":"00-15-99-A9-4B-BD", "ip":"192.168.1.10", "name": "qd", "dev":"printer" }
+
+         
 // 00-16-6D-D6-30-1C    192.168.1.104        zcy    coolpad
 // 04-E5-36-0A-6B-95    192.168.1.105        qd    pad
 // 8C-A9-82-61-CC-1A    192.168.1.106        ty    t40
