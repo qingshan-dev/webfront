@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>异步加载</title>
+</head>
+<body>
+  <p>脚本阻滞:HTML中script节点对应的脚本下载且执
+行结束之前,浏览器不会发起任何新的HTTP请求,也
+不会对该节点以下的任何内容进行渲染. </p>
+  <p>脚本下载完后会立刻被执行</p>
+  
+
+<script>
+  // onload 时的异步加载
+  (function() {
+   function async_load(){
+       var s = document.createElement('script');
+       s.type = 'text/javascript';
+       s.async = true;
+       s.src = 'http://yourdomain.com/script.js';
+       var x = document.getElementsByTagName('script')[0];
+       x.parentNode.insertBefore(s, x);
+   }
+   if (window.attachEvent) //ie, 
+       window.attachEvent('onload', async_load);
+   else
+       window.addEventListener('load', async_load, false);
+   })();
+</script>
+</body>
+</html>

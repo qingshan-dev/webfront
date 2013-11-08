@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>asyncInnerHTML</title>
+</head>
+<body>
+  <script>
+
+    var htmlStr = '<div><p>p1</p><p>p2</p><div><div>p3</div>';
+    asyncInnerHTML(htmlStr, function(fragment){
+        // You can treat 'fragment' as a regular node.
+        document.body.appendChild(fragment);
+    });
+
+    function asyncInnerHTML(HTML, callback) {
+        var temp = document.createElement('div'),
+            frag = document.createDocumentFragment();
+        temp.innerHTML = HTML;
+        (function(){
+            if(temp.firstChild){
+                frag.appendChild(temp.firstChild);
+                setTimeout(arguments.callee, 0); //给浏览器留出时间来渲染页面
+            } else {
+                callback(frag);
+            }
+        })();
+    }
+  </script>
+</body>
+</html>

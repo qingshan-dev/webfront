@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> 分时加载 </title> 
+  <title> 分时加载 </title>
 
 <style> 
-button { width:200px; height:50px; } 
-#lay {margin:0 auto; width: 670px; } 
+button { width:200px; height:50px; }
+#lay {margin:0 auto; width: 670px; }
 #userlist { width:502px; border:1px solid #8C8C8C; margin-left:50px; margin-top:10px; height:30px; border-collapse:collapse; font-size:12px; } 
 #userlist thead td { height:25px; border:1px solid #8C8C8C; text-align:center; background-color:#00CC00; } 
 #userlist tbody td { height:25px; border:1px solid #8C8C8C; text-align:center; } 
-</style> 
-</head> 
+</style>
+</head>
 
 <body> 
 <div id="lay"> 
@@ -31,7 +31,7 @@ var loadDemo = function() {
     var $ = function(id) { return document.getElementById(id); }, 
         resetBtn = $('resetBtn'), tradBtn = $('tradBtn'), timeBtn = $('timeBtn'),progress = $('processBar'),  
         userlist = $('userlist'), tbody = userlist.tBodies[0], i, n = 1, JSON_DATA = []; 
-  
+
     // 创建用户列表 
     function addItem(data) { 
         var tr = document.createElement('tr'); 
@@ -56,20 +56,20 @@ var loadDemo = function() {
             userlist.replaceChild(temp.firstChild.tBodies[0], tbody); 
             tbody = userlist.tBodies[0]; 
         } else { 
-            tbody.innerHTML = ''; 
+            tbody.innerHTML = '';
         } 
         progress.innerHTML = ''; 
         progress.style.width = 0; 
         n = 1; 
     } 
-    // 分时函数[*****] 
-    function timedChunk(items, process, context, callback) { 
+    // 分时函数，items是数据，process是要执行的函数，context是传递过来的上下文，callback是回调函数 
+    function timedChunk(items, process, context, callback) {
         var todo = items.concat(), delay = 25; 
         setTimeout(function() { 
-            var start = +new Date(); 
+            var start = +new Date();
             do { 
-                process.call(context, todo.shift()); 
-            } while (todo.length > 0 && (+new Date() - start < 50)) 
+                process.call(context, todo.shift());
+            } while (todo.length > 0 && (+new Date() - start < 50)) // 50ms 是大多数js代码执行所需要花费的时间，如果执行的时间要小于50ms，则可以再执行一次
             if(todo.length > 0) { 
                 setTimeout(arguments.callee, 25); 
             } else if(callback) { 
@@ -96,7 +96,7 @@ var loadDemo = function() {
         timeBtn.disabled = true; 
         var start = +new Date(), end; 
         for(var i = 0, len = JSON_DATA.length; i < len; i++) { 
-            addItem(JSON_DATA[i]); 
+            addItem(JSON_DATA[i]);
         } 
         end = +new Date(); 
 　　　　 resetBtn.disabled = false; 
@@ -106,7 +106,7 @@ var loadDemo = function() {
     return { 
         run: function() { 
             // 模拟用户数据 
-            for(i = 1; i <= 5000; i++) { 
+            for(i = 1; i <= 5000; i++) {
                 JSON_DATA.push(['用户名称' + i]); 
             } 
             resetBtn.onclick = function() { reset(); } 
