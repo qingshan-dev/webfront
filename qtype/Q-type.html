@@ -3,78 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Q-type</title>
-  <style>
-    body {
-      text-align: center;
-    }
-    .container {
-      width: 100%;
-      height: 550px;
-      border: 1px solid #999;
-      padding: 0;
-    }
-    .wrap {
-      width: 600px;  
-      height: 100%;
-      position: relative;
-      margin: 0 auto;
-    }
-    svg {
-      border: 1px solid #999;
-    }
-    .box{
-      position: absolute;
-      bottom: 0;
-      width: 50px;
-      height: 50px;
-      /*border-radius: 50px;*/
-      /*background: teal;*/
-      border: 5px solid lightblue;
-      line-height: 50px;
-      color: teal;
-      font-size: 60px;
-      overflow: hidden;
-      background-size: 100% 100%;
-    }
-
-    .hit {
-      color: red;
-    }
-    #input {
-      margin-top: 20px;
-      width: 300px;
-      height: 30px;
-      border-radius: 5px;
-      border: 1px solid #999;
-      box-shadow: 0 0 2px teal;
-      outline: none;
-      font-size: 16px;
-      padding: 0 28px;
-      background: url("images/xu.gif") no-repeat left top;
-    }
-    
-    .tip {
-      width: 900px;
-      position: absolute;
-      word-wrap: break-word;
-      word-break:normal;
-      top: 200px;
-      left: 50%;
-      margin-left: -450px;
-      display: inline-block;
-    }
-
-  </style>
+  <link rel="stylesheet" href="style/style.css">
   <script src="d3.v3.min.js"></script>
   <script src="gamedata.js"></script>
 </head>
 <body>
-  <!-- <svg></svg> -->
   <div class="container"><div class="wrap"></div></div>
   <input type="text" name="" id="input">
   <script>
   var w = 900;
-  var h = 500;
+  var h = 490;
   var padding = (document.body.offsetWidth - w)/2;
   var svg = d3.select("svg").attr("width", w).attr("height", h);
   var wrap = d3.select(".wrap");
@@ -82,9 +20,9 @@
   var level = 1, levelOver = 4, elements, dataset = [];
 
 
+// Game begin
 start();
 
-// Game begin
 function start() {
   level = 1;
   generateData(level);
@@ -97,9 +35,9 @@ function generateData(level) {
   wrap.node().innerHTML = "";
   dataset = [];
 
-  // load new level data
   if(level <= 1) {
-    dataset = dataset.concat(numbers(level + 2));
+    // dataset = dataset.concat(numbers(level + 2));
+    dataset = [1, 2, 5, 7, 8];
   }
   else if(level == 2) {
     dataset = dataset.concat(letters);
@@ -197,7 +135,12 @@ function generateData(level) {
           d3.select(that).remove();
           clearInput();
           checkBoxCount();
-        }, 20)
+        }, 400)
+      }
+      else {
+        if(level <= 2) {
+          clearInput();
+        }
       }
     }
   });
@@ -207,7 +150,8 @@ function generateData(level) {
   }
 
   //set focus to input box
-  document.getElementById("input").focus();
+  // document.getElementById("input").focus();
+  d3.select("#input").node().focus();
 
   //check whether all box has been hitted
   function checkBoxCount() {
@@ -222,7 +166,7 @@ function generateData(level) {
         var msg = "Great! Level "+level;
         if(level == 2) { msg = "Good job! Level "+level; }
         if(level == 3) { msg = "Be careful now! Level "+level; }
-        if(level == 4) { msg = "The last level ! <br/> You will find a surprise！" }
+        if(level == 4) { msg = "Surprise comes！ Level "+level; }
         great(msg);
         setTimeout(function() {
           generateData(level);

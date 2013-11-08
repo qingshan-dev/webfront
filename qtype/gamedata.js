@@ -6,7 +6,7 @@ function numbers(count) {
   return data;
 } 
 
-var names = ["滕","波","涛","灰","敏","楠","宏","钟"];
+var names = ["teng","bo","tao","hui","min","nan","hong","zhong"];
 
 var letters = ["t","h","e",
                "q","i","c","k",
