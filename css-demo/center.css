@@ -1,0 +1,30 @@
+.tip {
+  width: 100px;
+}
+
+.tip {
+  content: 'hello';
+  border: 1px solid red;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+
+  /* For visualization
+  background: #808080; width: 5px;
+  */
+}
+
+.box {
+  display: inline-block;
+  vertical-align: middle;
+  /*width: 300px;*/
+  padding: 10px 15px;
+  border: #a0a0a0 solid 1px;
+  background: #f5f5f5;
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+}

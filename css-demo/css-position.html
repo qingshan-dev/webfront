@@ -5,24 +5,27 @@
   <title>css-position test</title>
   <style>
     body {
-      position: relative!important;
+      
     }
     .container {
       width: 100%;
       background: #ccc;
-      height: 400px;
+      height: 900px;
+      @media screen and (max-width: 1280px) {
+        height: 900px;
+      }
     }
     footer {
-      position: absolute;
-      bottom: 0;
+      /*position: absolute;*/
+      /*bottom: 0;*/
       width: 100%;
       background: #666;
-      height: 100px; 
+      height: 100px;
     }
   </style>
 </head>
 <body>
-  <div class="container"></div>
+  <div class="container"> </div>
   <footer></footer>
 </body>
 </html>

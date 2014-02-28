@@ -1,0 +1,208 @@
+/* qmark */
+@-webkit-keyframes qmark {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes qmark {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes qmark {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes qmark {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* fontbulger */
+@-webkit-keyframes fontbulger {
+   0% {
+    font-size: 10px;
+  }
+  30% {
+    font-size: 40px;
+  }
+  100% {
+    font-size: 28px;
+  }
+}
+@-moz-keyframes fontbulger {
+   0% {
+    font-size: 10px;
+  }
+  30% {
+    font-size: 40px;
+  }
+  100% {
+    font-size: 28px;
+  }
+}
+@-o-keyframes fontbulger {
+   0% {
+    font-size: 10px;
+  }
+  30% {
+    font-size: 40px;
+  }
+  100% {
+    font-size: 28px;
+  }
+}
+@keyframes fontbulger {
+   0% {
+    font-size: 10px;
+  }
+  30% {
+    font-size: 40px;
+  }
+  100% {
+    font-size: 28px;
+  }
+}
+
+/* spinning */
+@-webkit-keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@-moz-keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@-o-keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+/* background */
+@keyframes myfirst
+{
+0%   {background: red; left:0px; top:0px;}
+25%  {background: yellow; left:200px; top:0px;}
+50%  {background: blue; left:200px; top:200px;}
+75%  {background: green; left:0px; top:200px;}
+100% {background: red; left:0px; top:0px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {background: red; left:0px; top:0px;}
+25%  {background: yellow; left:200px; top:0px;}
+50%  {background: blue; left:200px; top:200px;}
+75%  {background: green; left:0px; top:200px;}
+100% {background: red; left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+0%   {background: red; left:0px; top:0px;}
+25%  {background: yellow; left:200px; top:0px;}
+50%  {background: blue; left:200px; top:200px;}
+75%  {background: green; left:0px; top:200px;}
+100% {background: red; left:0px; top:0px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {background: red; left:0px; top:0px;}
+25%  {background: yellow; left:200px; top:0px;}
+50%  {background: blue; left:200px; top:200px;}
+75%  {background: green; left:0px; top:200px;}
+100% {background: red; left:0px; top:0px;}
+}
+
+.box {
+  animation-name: bounce;
+  animation-duration: 4s;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+box {
+  width: 100px;
+  height: 100px;
+  background: #000;
+
+  -webkit-animation: qmark 5s infinite; /* Safari 4+ */
+  -moz-animation:    qmark 5s infinite; /* Fx 5+ */
+  -o-animation:      qmark 5s infinite; /* Opera 12+ */
+  animation:         qmark 5s infinite; /* IE 10+ */
+}
+
+.demo {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background: #000;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+
+#box {
+  // -webkit-animation: myfirst 5s ease-in infinite;
+}
+
+#box2 {
+  // transition: width 2s;
+  // -moz-transition: width 2s;  /* Firefox 4 */
+  // -webkit-transition: width 2s; /* Safari 和 Chrome */
+  // -o-transition: width 2s;  /* Opera */
+
+  -webkit-transition:
+    -webkit-transform 1s,
+    opacity 1s,
+    background 1s,
+    width 1s,
+    height 1s,
+    font-size 1s;
+
+  &:hover {
+    width:130px;
+    text-align: center;
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);   /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Safari and Chrome */
+    -o-transform: rotate(360deg);    /* Opera */
+    -moz-transform: rotate(360deg);    /* Firefox */
+
+
+    opacity: 0.5;
+    background: red;
+    height: 130px;
+    line-height: 130px;
+    font-size: 18px;
+  }
+}
+#box3 {
+  // -webkit-animation: qmark 5s infinite;
+}
+
+
+//: http://www.w3school.com.cn/css3/css3_multiple_columns.asp

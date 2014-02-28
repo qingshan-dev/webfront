@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function MouseOverResponse(event) {
+            document.getElementById("dvMouseStatus").innerHTML += "Mouse Over<br />";
+        }
+
+        function MouseOutResponse(event) {
+            document.getElementById("dvMouseStatus").innerHTML += "Mouse Out<br />";
+        }
+
+        function PointerOverResponse(event) {
+            document.getElementById("dvPointerStatus").innerHTML += "Pointer Over<br />";
+        }
+
+        function PointerOutResponse(event) {
+            document.getElementById("dvPointerStatus").innerHTML += "Pointer Out<br />";
+        }
+
+        function init() {
+            var dvObject = document.getElementById("dvObject");
+
+            dvObject.addEventListener("mouseover", MouseOverResponse, false);
+            dvObject.addEventListener("mouseout", MouseOutResponse, false);
+
+            dvObject.addEventListener("pointerover", PointerOverResponse, false);
+            dvObject.addEventListener("pointerout", PointerOutResponse, false);
+
+            // Support for prefixed IE10 implementation
+            dvObject.addEventListener("MSPointerOver", PointerOverResponse, false);
+            dvObject.addEventListener("MSPointerOut", PointerOutResponse, false);
+        }
+    </script>
+</head>
+<body onload="init()">
+    <p>Move your mouse, finger, or pen/stylus over the yellow box</p>
+    <div id="dvObject" style="float:right; background-color:yellow; height:100px; width:200px;">
+    </div>
+    <table>
+        <tr>
+            <td style="vertical-align:top; width:30%;"><div id="dvMouseStatus"></div></td>
+            <td style="vertical-align:top; width:40%;"><div id="dvPointerStatus"></div></td>
+        </tr>
+    </table>
+</body>
+</html>
