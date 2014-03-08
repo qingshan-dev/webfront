@@ -1,0 +1,11 @@
+a {
+  display: inline-block;
+  position: absolute;
+  background: #fff;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+  font-family: "微软雅黑";
+  text-decoration: none;
+}
+
